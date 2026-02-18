@@ -2,6 +2,7 @@ from Tractography import tensorODFStreamlineGeneration
 import pickle
 import os.path
 from fury import window, actor
+from dipy.tracking.streamline import select_random_set_of_streamlines
 
 
 def run_tractography():
@@ -36,7 +37,8 @@ def view_tractography():
         streamlines = pickle.load(inp)
 
     scene = window.Scene()
-    scene.add(actor.streamtube(streamlines))
+    subset = select_random_set_of_streamlines(streamlines, 10000)
+    scene.add(actor.streamtube(subset, ))
     window.show(scene)
 
 
