@@ -13,7 +13,7 @@ git clone https://github.com/Spenbert02/dipy.git
 ```
 cd dipy
 pip install -r requirements.txt
-pip install wheel setuptools
+pip install wheel setuptools alive_progress fury
 pip install . --no-build-isolation
 ```
 
