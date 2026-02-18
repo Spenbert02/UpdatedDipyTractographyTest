@@ -5,7 +5,7 @@
 git clone https://github.com/Spenbert02/UpdatedDipyTractographyTest.git
 cd UpdatedDipyTractographyTest
 ```
-3) clone the spenbert02/dipy repo [here](https://github.com/Spenbert02/dipy)
+3) clone the spenbert02/dipy repo
 ```
 git clone https://github.com/Spenbert02/dipy.git
 ```
