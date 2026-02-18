@@ -20,3 +20,4 @@ pip install . --no-build-isolation
 Notes:
 1) if any errors of the form `No module named <module_name>` pop up, run `pip install <module_name>` to install them
 2) any dipy imports might be "unrecognized" by vscode (ie, "import dipy" would be underlined in yellow), but you should still be able to import and use dipy. It just doesn't like using the python package this way.
+3) Test data can be found [here](https://openneuro.org/datasets/ds003900/versions/1.1.1). This is brain data but its the same format. The three DWI files (the actual scan, bval, and bvecs) along with a mask are required. see `demo.py`

@@ -18,9 +18,7 @@ def run_tractography():
         bvec_fpath,
         bval_fpath,
         mask_fpath,
-        rel_peak_threshold=0.99,
-        min_separation_angle=180,
-        max_len=500,
+        max_len=200,
         seed_density=[1, 1, 1],
         return_all=True
     )
@@ -37,7 +35,7 @@ def view_tractography():
         streamlines = pickle.load(inp)
 
     scene = window.Scene()
-    subset = select_random_set_of_streamlines(streamlines, 10000)
+    subset = select_random_set_of_streamlines(streamlines, 100000)
     scene.add(actor.streamtube(subset, ))
     window.show(scene)
 

@@ -5,9 +5,9 @@ from dipy.direction import peaks_from_model
 from dipy.io import read_bvals_bvecs
 from dipy.tracking.stopping_criterion import BinaryStoppingCriterion
 from dipy.tracking.local_tracking import LocalTracking
-from dipy.tracking.streamline import Streamlines
 from dipy.tracking import utils
 from dipy.io.image import load_nifti
+from nibabel.streamlines.array_sequence import ArraySequence
 
 
 def tensorODFStreamlineGeneration(scan_data_fpath, bvec_fpath, bval_fpath, mask_fpath, rel_peak_threshold=0.99, min_separation_angle=180,
@@ -64,6 +64,6 @@ def tensorODFStreamlineGeneration(scan_data_fpath, bvec_fpath, bval_fpath, mask_
                                           maxlen=int(max_len / STEP_LENGTH),
                                           fixedstep=True,
                                           return_all=return_all)
-    streamlines = Streamlines(streamlines_generator)
+    streamlines = ArraySequence(streamlines_generator)
     
     return streamlines
