@@ -1,6 +1,9 @@
 # steps to use the forked version of dipy
 1) install python 3.10.x (release is [here](https://www.python.org/downloads/release/python-31019/))
-2) download this repository `git clone https://github.com/Spenbert02/UpdatedDipyTractographyTest.git`
+2) download this repository
+```
+git clone https://github.com/Spenbert02/UpdatedDipyTractographyTest.git
+```
 3) clone the spenbert02/dipy repo [here](https://github.com/Spenbert02/dipy)
 4) run the following commands:
 ```
