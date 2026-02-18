@@ -3,6 +3,7 @@
 2) download this repository
 ```
 git clone https://github.com/Spenbert02/UpdatedDipyTractographyTest.git
+cd UpdatedDipyTractographyTest
 ```
 3) clone the spenbert02/dipy repo [here](https://github.com/Spenbert02/dipy)
 4) run the following commands:
